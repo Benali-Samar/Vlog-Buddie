@@ -30,3 +30,10 @@ and sends the frames to the output file.
    II- Testing
 
 Just compile by " gcc -o test video.c" and execute "./test" and here it is!
+
+
+III- Sources:
+
+- https://embetronicx.com/tutorials/linux/device-drivers/poll-linux-example-device-driver/
+- https://lwn.net/Articles/206765/
+- https://jayrambhia.wordpress.com/2013/07/03/capture-images-using-v4l2-on-linux/
