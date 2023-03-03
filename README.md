@@ -37,3 +37,4 @@ III- Sources:
 - https://embetronicx.com/tutorials/linux/device-drivers/poll-linux-example-device-driver/
 - https://lwn.net/Articles/206765/
 - https://jayrambhia.wordpress.com/2013/07/03/capture-images-using-v4l2-on-linux/
+- https://github.com/biotrump/v4l-capture/blob/master/demo.c 

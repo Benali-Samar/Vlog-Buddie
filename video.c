@@ -9,7 +9,7 @@
 
 #define BUFFER_COUNT 2
 
-	// The helpfull, inspiringfull code source : "https://github.com/biotrump/v4l-capture/blob/master/demo.c "  
+
 
 
 int main(int argc, char **argv)
