@@ -14,7 +14,7 @@
 
 int main(int argc, char **argv)
 {
-    // Open the video capture device ( that is my default device not with loopback shit !! ) 
+    // Open the video capture device 
     int fd = open("/dev/video0", O_RDWR |O_NONBLOCK);
    
     if (fd < 0) {
@@ -37,8 +37,6 @@ int main(int argc, char **argv)
     }
 
     // The output device,  i'm creating a new file to output it 
-    	//==> must change to make it in stream read from the device directly :/
-    	// ==> the same app can't read&write at the sam time on the same device 
     int out_fd = open("out.mp4", O_CREAT | O_WRONLY | O_TRUNC |O_NONBLOCK, 0644); // it can be /dev/video1 or out.raw
     if (out_fd < 0) {
         perror("Failed to open output device");
@@ -98,7 +96,7 @@ int main(int argc, char **argv)
         exit(1);
     }
 
-    // Use poll to wait for video capture events (==> it will be implemented in another app)
+    // Use poll to wait for video capture events 
     struct pollfd poll_fds[1];
     poll_fds[0].fd = fd;
     poll_fds[0].events = POLLIN;
