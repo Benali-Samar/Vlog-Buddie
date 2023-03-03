@@ -1,6 +1,6 @@
 #Video-capture code using V4L2, poll, mmap and ioctl
 
-    I- Discription
+   I- Discription
 
 This repo contains a simple manipulation to just video capturing 
 and sends the frames to the output file.
@@ -27,6 +27,6 @@ and sends the frames to the output file.
 
 11- Clean up (stop capturing, unmap buffers and close devices). 
 
-    II- Testing
+   II- Testing
 
 Just compile by " gcc -o test video.c" and execute "./test" and here it is!
