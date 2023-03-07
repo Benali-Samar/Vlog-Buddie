@@ -2,7 +2,7 @@
 
    I- Discription
 
-This repo contains a simple manipulation to just video capturing 
+This repo contains a manipulation to video capturing from the device 
 and sends the frames to the output file.
 
 1- Opens the video capture device.
