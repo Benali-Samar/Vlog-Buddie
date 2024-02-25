@@ -1,40 +1,8 @@
-#Video-capture code using V4L2, poll, mmap and ioctl
+# Vlog Buddie  
 
-   I- Discription
+*Discription*
 
-This repo contains a manipulation to video capturing from the device 
-and sends the frames to the output file.
+Vlog buddie can be used for "study with me" vlogs ;) 
 
-1- Opens the video capture device.
+It records video capture using purely Unix standards.
 
-2- Set the video formats and parametres.
-
-3- Opens the output device.
-
-4- Allocate buffers.
-
-5- Memory mapping the buffers.
-
-6- Enqueue the video buffers.
-
-7- Start Capturing video frames.
-
-8- Polling on the fd of the device.
-
-9- Dequeue the video buffers.
-
-10- Writes the video data to the output device.
-
-11- Clean up (stop capturing, unmap buffers and close devices). 
-
-   II- Testing
-
-Just compile by " gcc -o test video.c" and execute "./test" and here it is!
-
-
-III- Sources:
-
-- https://embetronicx.com/tutorials/linux/device-drivers/poll-linux-example-device-driver/
-- https://lwn.net/Articles/206765/
-- https://jayrambhia.wordpress.com/2013/07/03/capture-images-using-v4l2-on-linux/
-- https://github.com/biotrump/v4l-capture/blob/master/demo.c 
